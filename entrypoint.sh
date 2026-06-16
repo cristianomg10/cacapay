@@ -8,6 +8,7 @@ php artisan view:cache
 
 echo "Executando migrations..."
 
+php artisan session:table
 php artisan migrate --force
 
 echo "Iniciando aplicação..."
