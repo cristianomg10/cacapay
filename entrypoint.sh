@@ -1,15 +1,17 @@
 #!/bin/sh
 
 echo "Instalando caches..."
+set -e
+
+
+php artisan optimize:clear
+
+php artisan session:table
+php artisan migrate --force
 
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
-
-echo "Executando migrations..."
-
-php artisan session:table
-php artisan migrate --force
 
 echo "Iniciando aplicação..."
 
