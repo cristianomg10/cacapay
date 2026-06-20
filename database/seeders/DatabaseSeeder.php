@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CidadeSeeder::class,
             StatusTransacaoSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }

@@ -13,16 +13,7 @@ class CidadeSeeder extends Seeder
     public function run(): void
     {
         $cidades = [
-            ['nome' => 'São Paulo', 'uf' => 'SP'],
-            ['nome' => 'Rio de Janeiro', 'uf' => 'RJ'],
-            ['nome' => 'Belo Horizonte', 'uf' => 'MG'],
-            ['nome' => 'Brasília', 'uf' => 'DF'],
-            ['nome' => 'Salvador', 'uf' => 'BA'],
-            ['nome' => 'Fortaleza', 'uf' => 'CE'],
-            ['nome' => 'Curitiba', 'uf' => 'PR'],
-            ['nome' => 'Manaus', 'uf' => 'AM'],
-            ['nome' => 'Recife', 'uf' => 'PE'],
-            ['nome' => 'Porto Alegre', 'uf' => 'RS'],
+            ['nome' => 'Caçador', 'uf' => 'SC'],
         ];
 
         foreach ($cidades as $cidade) {
