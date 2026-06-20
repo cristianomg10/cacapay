@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('cidades', CidadeController::class);
         Route::resource('empresas-parceiras', EmpresaParceiraController::class);
         Route::resource('status-transacoes', StatusTransacaoController::class);
-        Route::resource('transacoes', TransacaoController::class);
+        Route::resource('transacoes', TransacaoController::class)->parameters(["transacoes" => "transacao"]);
         Route::resource('creditos', CreditoController::class);
     });
 
