@@ -1,13 +1,10 @@
 #!/bin/sh
 
 echo "Instalando caches..."
-set -e
-
-
 php artisan optimize:clear
 
 php artisan session:table
-php artisan migrate --force
+php artisan migrate
 
 php artisan config:cache
 php artisan route:cache
