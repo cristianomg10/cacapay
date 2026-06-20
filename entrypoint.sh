@@ -5,6 +5,7 @@ php artisan optimize:clear
 
 php artisan session:table
 php artisan migrate
+php artisan db:seed 
 
 php artisan config:cache
 php artisan route:cache
